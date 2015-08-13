@@ -2,7 +2,10 @@ n = int(input('Введите количество программистов[0.
 p1 = str('программист')
 p2 = str('программиста')
 p3 = str('программистов')
-if len(str(n)) == 1:
+if n<0 or n>10000:
+    print ('Вы ввели значение не из заданого диапазона')
+
+elif len(str(n)) == 1:
     if n == 1:
         print (n, p1)
     elif n == 2 or n == 4 or n ==3:
@@ -39,3 +42,5 @@ elif len(str(n)) == 4:
         print (n, p3)
 elif n == 10000:
     print (n, p3)
+
+
